@@ -5,16 +5,7 @@ public class PrimeNumbers {
 
         int i = 0;
         while (i <= printToInclusive) {
-            boolean isPrime = true;
-            int j = 2;
-            while (j <= i / 2) {
-                if (i % j == 0) {
-                    isPrime = false;
-                    break;
-                }
-                j++;
-            }
-            if (isPrime) {
+            if ((i % i == 0) && (i % 1 == 0)) {
                 System.out.println(i);
             }
             i++;
